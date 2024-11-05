@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.js": "javascriptreact",
+        "kernel.h": "c",
+        "module.h": "c",
+        "init.h": "c",
+        "stdarg.h": "c",
+        "bitops.h": "c",
+        "bits.h": "c",
+        "bitsperlong.h": "c",
+        "build_bug.h": "c",
+        "compiler.h": "c",
+        "thread": "c",
+        "stdint.h": "c",
+        "cstdint": "c",
+        "stdint-gcc.h": "c",
+        "stdio.h": "c",
+        "types.h": "c",
+        "task.h": "c",
+        "random": "c",
+        "kprobes.h": "c",
+        "uaccess.h": "c",
+        "stat.h": "c",
+        "syscalls.h": "c",
+        "kallsyms.h": "c",
+        "unistd.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

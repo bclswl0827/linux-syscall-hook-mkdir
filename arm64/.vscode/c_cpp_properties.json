@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/lib/gcc/x86_64-linux-gnu/10/include",
+                "/usr/src/linux-headers-5.15.84-xanmod1/include",
+                "/usr/src/linux-headers-5.15.84-xanmod1/arch/x86/include",
+                "/usr/src/linux-headers-5.15.84-xanmod1/arch/x86/include/generated"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
