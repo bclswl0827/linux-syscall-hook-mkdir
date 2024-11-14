@@ -82,7 +82,12 @@ static unsigned long* syscall_table;                       // `syscall_table` po
 // `custom_mkdir` is our custom `mkdir` function.
 // Do whatever you want here and return the result.
 static int custom_mkdir(const struct pt_regs* regs) {
-    printk(KERN_INFO LOG_PREFIX "`mkdir` function called by user\n");
+    char filename[512] = {0};
+    char __user* pathname = (char*)regs->di;
+    if (copy_from_user(filename, pathname, sizeof(filename))) {
+        return -EFAULT;
+    }
+    printk(KERN_INFO LOG_PREFIX "`mkdir` function called by user, file name: %s\n", filename);
     return prototype_mkdir(regs);  // Call original `mkdir`.
 }
 
